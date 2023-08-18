@@ -13,6 +13,19 @@
 .head-nav .nav-container {
     display: flex;
     align-items: center;
+    color: #333333;
+}
+
+a{ color: initial;}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.dmfor:hover, .igLink:hover{
+    display:block;
+    background-color: #ddd;
 }
 
 .logo {
