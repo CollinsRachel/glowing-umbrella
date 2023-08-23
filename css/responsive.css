@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+    [aria-controls="navbarDropdown"] {
+        display: block;
+    }
+
+    [aria-expanded="false"] ~ ul {
+        display: none;
+    }
+
+    [aria-expanded="true"] ~ ul {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: var(--size-55);
+        background-image: linear-gradient(to right, transparent, rgba(192, 130, 130, 0.436));
+        width: 100%;
+        text-align: right;
+        box-shadow: 0px 0px 20px rgba(52, 49, 75, 0.1);
+    }
+
+    [aria-expanded="true"] ~ ul li a {
+        margin-right: var(--size-20);
+        color: var(--font-color-dark);
+    }
+
+}
